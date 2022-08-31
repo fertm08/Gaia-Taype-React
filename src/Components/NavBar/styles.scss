@@ -1,0 +1,31 @@
+.head {
+    background-color: rgba(0, 128, 0, 0.363);
+    background-image: url(./Media/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 100%;
+  }
+  .mainlogo {
+    height: 96px;
+    width: 30%;
+    font-size: 80px;
+    color: rgba(136, 102, 28, 0.89);
+    background-color: rgba(99, 228, 149, 0.308);
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    margin: 3px auto;
+    border: 1px solid greenyellow;
+    border-radius: 20%;
+  }
+  nav li a {
+    text-decoration: none;
+    color: rgb(209, 176, 99);
+    text-transform: uppercase;
+    display: block;
+    text-shadow: 0 0 15px black;
+  }
+  nav input {
+    height: 30px;
+    margin-top: 10px;
+}
