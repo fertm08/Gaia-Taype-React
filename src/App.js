@@ -1,12 +1,13 @@
-import './App.css'
-import NavBar from './Components/NavBar';
+import './App.scss'
+import NavBar from './Components/NavBar'
+import CartWidget from './Components/CartWidget';
+import ItemListContainer from './Containers/ItemListContainer';
 function App() {
   return (
     <>
     <NavBar/>
-    <div className="App">
-      
-    </div>
+    <ItemListContainer greeting={'Hola, Bienvenido/a a Gaia'}/>
+    <CartWidget/>
     </>
   );
 }
