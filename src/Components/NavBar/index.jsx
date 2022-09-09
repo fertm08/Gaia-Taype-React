@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.scss'
+import CartWidget from '../CartWidget'
 const NavBar = () => {
     return (
     <header className='head'>
@@ -18,6 +19,7 @@ const NavBar = () => {
                     <input type="text" placeholder="Buscar"/>
                     </nav>
                 </section>
+                <div><CartWidget/></div>
     </header>
     
 )
