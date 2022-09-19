@@ -9,8 +9,10 @@ import ItemDetailContainer from './Containers/ItemDetailContainer';
 import ItemListContainer from './Containers/ItemListContainer';
 import NotFound from './Components/NotFound';
 import CartContainer from './Containers/CartContainer';
+import ShopProvider from './Context/CartContext';
 function App() {
   return (
+    <ShopProvider>
     <BrowserRouter>
       <NavBar/>
       <Routes>
@@ -21,6 +23,7 @@ function App() {
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>  
+    </ShopProvider>
   );
 }
 

@@ -1,13 +1,20 @@
-// import { createContext } from "react";
+import React from 'react'
+import { useState } from 'react';
+import { createContext } from "react";
 
-// export const ShopProvider = createContext()
+export const Shop = createContext()
 
-// import React from 'react'
+    const ShopProvider = ({children}) => {
+        const [cart,setCart] = useState([])
+        const addItem = (item) => {
+            const cartMod = [...cart, item]
+            setCart(cartMod)
+        }
+    return (
+    <Shop.Provider value={{cart,addItem}}>
+        {children}
+    </Shop.Provider>
+    )
+}
 
-// const CartContext = () => {
-//   return (
-//     <span>number</span>
-//   )
-// }
-
-// export default CartContext
+export default ShopProvider
