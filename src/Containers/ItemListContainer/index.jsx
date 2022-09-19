@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemList from '../../Components/ItemList';
 import { products } from '../../data/products';
 import './styles.scss'
 
 const ItemListContainer = ({greeting}) => {
   const [productos, setProductos] = useState([])
+  const {categoryID} = useParams()
   useEffect(()=> {
     (async () =>{
     const obtenerProductos = new Promise((resolve, reject) => {
@@ -22,7 +24,7 @@ const ItemListContainer = ({greeting}) => {
         console.log(error);
       }
     })()
-  },[])
+  },[categoryID])
   console.log(productos);
 
   return (

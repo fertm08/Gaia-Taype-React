@@ -17,6 +17,7 @@ const ItemDetailContainer = () => {
         })
         try{
             const response =  await (obtenerProducto);
+            // const responseFound = response.find(()=>response.id)
             setProductDetail(response)
         }
         catch (error){
